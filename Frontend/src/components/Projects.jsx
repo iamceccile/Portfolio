@@ -80,7 +80,7 @@ function Projects() {
   return (
     <section
         id="projects"
-        className="w-full min-h-screen bg-[#0f0f14] px-6 py-20"
+        className="w-full min-h-screen bg-[#242445] px-6 py-20"
     >
       <h2 className="text-4xl font-bold text-[#ff6fa5] text-center mb-16">
         Projets
