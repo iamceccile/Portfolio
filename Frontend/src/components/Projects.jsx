@@ -20,6 +20,12 @@ import eipDatesImg from "../assets/projects/EIP/Dates.png"
 import eipProjectImg from "../assets/projects/EIP/Project.png"
 import eipTeamImg from "../assets/projects/EIP/Team.png"
 
+import fillgood1Img from "../assets/projects/filgood/filgood1.png"
+import fillgood2Img from "../assets/projects/filgood/filgood2.png"
+import fillgood3Img from "../assets/projects/filgood/filgood3.png"
+
+import React from "react"
+
 function Projects() {
     const projects = [
         {
@@ -77,7 +83,20 @@ function Projects() {
               eipTeamImg
           ]
         },
-      ]
+
+        {
+          title: "FilGood — Assistant d’achat textile responsable",
+          period: "Projet – 2026",
+          description:
+            "Développement d’une application mobile visant à aider les consommateurs à mieux comprendre les vêtements au moment de l’achat. FilGood analyse les informations présentes sur l’étiquette (composition, matières, entretien) et les transforme en repères simples et lisibles afin de faciliter des choix plus responsables. L’application attribue un score basé sur la composition des fibres, leur recyclabilité et leur impact environnemental, tout en fournissant des conseils d’usage et d’entretien pour prolonger la durée de vie des vêtements. Elle propose également un système de collection permettant aux utilisateurs d’enregistrer les vêtements scannés et de suivre l’évolution de leur garde-robe.",
+          tech: ["React Native", "React",  "Python", "API", "Mobile App"],
+          images: [
+            fillgood1Img,
+            fillgood2Img,
+            fillgood3Img
+          ]
+        }
+              ]
 
   return (
     <section
