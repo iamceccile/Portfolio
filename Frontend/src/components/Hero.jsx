@@ -1,9 +1,9 @@
-import { PiCrownSimpleFill } from "react-icons/pi"
+import { PiCrownSimpleFill, PiCode, PiHeart, PiSparkle } from "react-icons/pi"
 import profileImg from "../assets/profile.jpg"
 
 function Hero() {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center text-center px-6 bg-[#0f0f14]">
+    <section id="top" className="w-full min-h-screen flex flex-col items-center justify-center text-center px-6 bg-[#0f0f14]">
 
       {/* PHOTO */}
       <div className="mb-8 relative">
@@ -23,14 +23,38 @@ function Hero() {
 
       {/* DESCRIPTION */}
       <p className="text-xl max-w-2xl mb-10 text-gray-300 leading-relaxed">
-        Développeuse Web passionnée, spécialisée en Angular (Typescript) et Nodejs (Javascript).
+        Qu’est-ce que ça donne quand je m’essaie au Web ?
         <br />
-        J’aime créer des interfaces propres, modernes et performantes.
+        Je ne prétends pas être une experte (pas encore 😉), mais j’adore créer, concevoir et transformer une idée en quelque chose de concret. 
+        Partir d’une page blanche et voir apparaître une plateforme complète, avec des interfaces propres, modernes et performantes… c’est ça qui me motive.
       </p>
+
+      {/* STATS */}
+      <div className="flex flex-wrap justify-center gap-8 mb-10">
+
+        <div className="bg-[#16161d] p-6 rounded-2xl border border-[#ff6fa520] text-center w-36">
+          <PiCode className="text-3xl text-[#ff6fa5] mx-auto mb-2" />
+          <div className="text-2xl font-bold text-white">6+</div>
+          <div className="text-sm text-gray-400">Projets réalisés</div>
+        </div>
+
+        <div className="bg-[#16161d] p-6 rounded-2xl border border-[#ff6fa520] text-center w-36">
+          <PiHeart className="text-3xl text-[#ff6fa5] mx-auto mb-2" />
+          <div className="text-2xl font-bold text-white">3</div>
+          <div className="text-sm text-gray-400">Années d'expérience</div>
+        </div>
+
+        <div className="bg-[#16161d] p-6 rounded-2xl border border-[#ff6fa520] text-center w-36">
+          <PiSparkle className="text-3xl text-[#ff6fa5] mx-auto mb-2" />
+          <div className="text-2xl font-bold text-white">100%</div>
+          <div className="text-sm text-gray-400">Passion</div>
+        </div>
+
+      </div>
 
       {/* BUTTONS */}
       <div className="flex gap-6">
-        
+
         <a
           href="#projects"
           className="bg-[#ff6fa5] text-black px-8 py-3 rounded-full shadow-lg hover:scale-105 transition duration-300"

@@ -14,6 +14,11 @@ import jebDashboardImg from "../assets/projects/Jeb/dashboard.png"
 import jebMenuImg from "../assets/projects/Jeb/Menu.png"
 import jebProjectImg from "../assets/projects/Jeb/Projet.png"
 
+import eipDashboardImg from "../assets/projects/EIP/Dashboard.png"
+import eipDatesImg from "../assets/projects/EIP/Dates.png"
+import eipProjectImg from "../assets/projects/EIP/Project.png"
+import eipTeamImg from "../assets/projects/EIP/Team.png"
+
 function Projects() {
     const projects = [
         {
@@ -32,6 +37,19 @@ function Projects() {
         },
 
         {
+          title: "JEB Incubateur — Startup Showcase Platform",
+          period: "Projet Epitech – 2025",
+          description:
+              "Conception et développement d’une plateforme complète de gestion et de valorisation des startups incubées. L’application comprend un espace public (catalogue de projets, recherche avancée, actualités, événements), un espace startup pour la gestion de profil et opportunités, ainsi qu’un back-office administrateur avec gestion des rôles et CRUD complet. Architecture front-end Angular couplée à un backend Laravel avec persistance des données et synchronisation API.",
+          tech: ["Angular", "Laravel", "REST API", "Authentication", "Role Management"],
+          images: [
+              jebDashboardImg,
+              jebMenuImg,
+              jebProjectImg
+          ]
+      },
+
+        {
             title: "AREA – Plateforme d’automatisation",
             period: "Projet Epitech – 2025 - 2026",
             description:
@@ -45,25 +63,18 @@ function Projects() {
         },
 
         {
-            title: "EIP Manager — Plateforme de gestion de projets",
-            period: "Projet Personnel – 2025 - 2026",
-            description:
-                "Développement d’une application web dédiée à la gestion et au suivi des projets EIP. La plateforme centralise les informations essentielles, facilite le pilotage des équipes et offre une vision claire de l’avancement global. Elle intègre un système de gestion des fuseaux horaires permettant de calculer automatiquement des créneaux adaptés aux équipes internationales. L’EIP Manager propose également un mode personnel servant d’agenda intelligent avec séparation pro / personnel.",
-            tech: ["Angular", "NestJS", "Java", "PostgreSQL"],
-          },
-
-          {
-            title: "JEB Incubateur — Startup Showcase Platform",
-            period: "Projet Epitech – 2025",
-            description:
-                "Conception et développement d’une plateforme complète de gestion et de valorisation des startups incubées. L’application comprend un espace public (catalogue de projets, recherche avancée, actualités, événements), un espace startup pour la gestion de profil et opportunités, ainsi qu’un back-office administrateur avec gestion des rôles et CRUD complet. Architecture front-end Angular couplée à un backend Laravel avec persistance des données et synchronisation API.",
-            tech: ["Angular", "Laravel", "REST API", "Authentication", "Role Management"],
-            images: [
-                jebDashboardImg,
-                jebMenuImg,
-                jebProjectImg
-            ]
-        }
+          title: "EIP Manager — Plateforme de gestion de projets",
+          period: "Projet Personnel – 2025 - 2026",
+          description:
+              "Développement d’une application web dédiée à la gestion et au suivi des projets EIP. La plateforme centralise les informations essentielles, facilite le pilotage des équipes et offre une vision claire de l’avancement global. Elle intègre un système de gestion des fuseaux horaires permettant de calculer automatiquement des créneaux adaptés aux équipes internationales. L’EIP Manager propose également un mode personnel servant d’agenda intelligent avec séparation pro / personnel.",
+          tech: ["Angular", "NestJS", "Java", "PostgreSQL"],
+          images: [
+              eipDashboardImg,
+              eipDatesImg,
+              eipProjectImg,
+              eipTeamImg
+          ]
+        },
       ]
 
   return (
@@ -85,6 +96,12 @@ function Projects() {
             </div>
         ))}
     </div>
+    <a
+      href="#top"
+      className="fixed bottom-8 right-8 bg-[#ff6fa5] text-black p-3 rounded-full shadow-lg hover:scale-110 transition duration-300"
+    >
+      ↑
+    </a>
     </section>
   )
 }

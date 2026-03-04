@@ -1,9 +1,46 @@
 @import "tailwindcss";
 
-body {
-  margin: 0;
+/* BLOBS */
+@keyframes blob {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(40px,-60px) scale(1.15); }
+  66% { transform: translate(-30px,25px) scale(0.9); }
 }
 
-html {
-  scroll-behavior: smooth;
+.animate-blob {
+  animation: blob 12s infinite ease-in-out;
 }
+
+/* GRADIENT */
+@keyframes gradient {
+  0%,100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
+}
+
+/* FLOAT */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* SCROLL */
+@keyframes scroll {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
+
+.animate-scroll {
+  animation: scroll 2s infinite;
+}
+
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }

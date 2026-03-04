@@ -58,7 +58,12 @@ import {
           </a>
   
         </div>
-  
+        <a
+      href="#top"
+      className="fixed bottom-8 right-8 bg-[#ff6fa5] text-black p-3 rounded-full shadow-lg hover:scale-110 transition duration-300"
+    >
+      ↑
+    </a>
       </section>
     )
   }
