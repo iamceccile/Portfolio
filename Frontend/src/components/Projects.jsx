@@ -8,7 +8,8 @@ import settingsImg from "../assets/projects/be/settings.png"
 
 import areaActionImg from "../assets/projects/area/Action-reation.png"
 import areaLoginImg from "../assets/projects/area/login.png"
-import areaServicesImg from "../assets/projects/area/services.png"
+import areaServicesImg from "../assets/projects/area/Services.png"
+import areaAreaImg from "../assets/projects/area/Area.png"
 
 import jebDashboardImg from "../assets/projects/Jeb/dashboard.png"
 import jebMenuImg from "../assets/projects/Jeb/Menu.png"
@@ -56,9 +57,10 @@ function Projects() {
               "Développement d’une plateforme d’automatisation inspirée de IFTTT et Zapier permettant d’interconnecter différents services via un système Action / Reaction. L’utilisateur peut créer des workflows personnalisés déclenchant automatiquement des réactions lorsqu’une action est détectée (ex : réception d’un email → sauvegarde automatique sur un drive). les services disponibles sont les suivant: Github, Google, Dropbox, Slack et Notion.  ",
             tech: ["Node.js", "Express js", "React", "Angular", "React Native", "Docker", "OAuth2", "REST API"],
             images: [
-                areaActionImg,
                 areaLoginImg,
-                areaServicesImg
+                areaServicesImg,
+                areaAreaImg,
+                areaActionImg,
               ]
         },
 
