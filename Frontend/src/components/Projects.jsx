@@ -51,7 +51,7 @@ function Projects() {
           period: "Projet Epitech – 2025",
           description:
               "Conception et développement d’une plateforme complète de gestion et de valorisation des startups incubées. L’application comprend un espace public (catalogue de projets, recherche avancée, actualités, événements), un espace startup pour la gestion de profil et opportunités, ainsi qu’un back-office administrateur avec gestion des rôles et CRUD complet. Architecture front-end Angular couplée à un backend Laravel avec persistance des données et synchronisation API.",
-          tech: ["Angular", "Laravel", "REST API", "Authentication", "Role Management"],
+          tech: ["React", "Laravel", "REST API", "Authentication", "Role Management"],
           images: [
               jebAccueilImg,
               jebDonneeImg,
