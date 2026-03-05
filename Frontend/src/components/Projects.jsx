@@ -10,10 +10,13 @@ import areaActionImg from "../assets/projects/area/Action-reation.png"
 import areaLoginImg from "../assets/projects/area/login.png"
 import areaServicesImg from "../assets/projects/area/Services.png"
 import areaAreaImg from "../assets/projects/area/Area.png"
+import areaCecileImg from "../assets/projects/area/Cecile.png"
 
-import jebDashboardImg from "../assets/projects/Jeb/dashboard.png"
+import jebDashboardImg from "../assets/projects/Jeb/Dashboard.png"
 import jebMenuImg from "../assets/projects/Jeb/Menu.png"
 import jebProjectImg from "../assets/projects/Jeb/Projet.png"
+import jebAccueilImg from "../assets/projects/Jeb/Accueil.png"
+import jebDonneeImg from "../assets/projects/Jeb/Donnee.png"
 
 import eipDashboardImg from "../assets/projects/EIP/Dashboard.png"
 import eipDatesImg from "../assets/projects/EIP/Dates.png"
@@ -33,7 +36,7 @@ function Projects() {
           period: "Août 2024 – Décembre 2024",
           description:
             "Développement d’une application interne permettant de remplacer des fichiers Excel par une solution web responsive pour le suivi des projets, consultants, facturation et marges. Les différentes pages sont entièrement interactives et reliées entre elles : toute modification d’un projet, d’un consultant ou d’une facture met à jour dynamiquement les indicateurs du dashboard. L’application intègre des règles métiers complexes (calcul du coût journalier, prorata temporis, rentabilité, ROI) afin de garantir la cohérence des données financières.",
-          tech: ["Angular", "TypeScript", "Node.js", "MySQL"],
+          tech: ["Angular", "TypeScript", "Node.js", "Nest.js", "MySQL"],
           images: [
             dashboardImg,
             consultantsImg,
@@ -50,9 +53,11 @@ function Projects() {
               "Conception et développement d’une plateforme complète de gestion et de valorisation des startups incubées. L’application comprend un espace public (catalogue de projets, recherche avancée, actualités, événements), un espace startup pour la gestion de profil et opportunités, ainsi qu’un back-office administrateur avec gestion des rôles et CRUD complet. Architecture front-end Angular couplée à un backend Laravel avec persistance des données et synchronisation API.",
           tech: ["Angular", "Laravel", "REST API", "Authentication", "Role Management"],
           images: [
+              jebAccueilImg,
+              jebDonneeImg,
+              jebProjectImg,
               jebDashboardImg,
-              jebMenuImg,
-              jebProjectImg
+              jebMenuImg
           ]
       },
 
@@ -61,12 +66,13 @@ function Projects() {
             period: "Projet Epitech – 2025 - 2026",
             description:
               "Développement d’une plateforme d’automatisation inspirée de IFTTT et Zapier permettant d’interconnecter différents services via un système Action / Reaction. L’utilisateur peut créer des workflows personnalisés déclenchant automatiquement des réactions lorsqu’une action est détectée (ex : réception d’un email → sauvegarde automatique sur un drive). les services disponibles sont les suivant: Github, Google, Dropbox, Slack et Notion.  ",
-            tech: ["Node.js", "Express js", "React", "Angular", "React Native", "Docker", "OAuth2", "REST API"],
+            tech: ["Express js", "React", "Angular", "React Native", "Docker", "OAuth2", "REST API"],
             images: [
                 areaLoginImg,
                 areaServicesImg,
                 areaAreaImg,
                 areaActionImg,
+                areaCecileImg
               ]
         },
 
